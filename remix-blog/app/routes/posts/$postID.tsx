@@ -1,7 +1,10 @@
+import { useParams } from "@remix-run/react";
+
 type Props = {};
 
 const PostDetail = (props: Props) => {
-  return <div>Post detail</div>;
+  const { postID } = useParams();
+  return <div>Post detail - {postID}</div>;
 };
 
 export default PostDetail;
