@@ -51,3 +51,14 @@ function Document({ children, title }: DocumentProps) {
     </html>
   );
 }
+
+export const ErrorBoundary = ({ error }: any) => {
+  return (
+    <Document title="Error">
+      <div>
+        <h1>Error</h1>
+        <p>{error.message}</p>
+      </div>
+    </Document>
+  );
+};
