@@ -1,19 +1,12 @@
+import { Tooltip, Button } from "flowbite-react";
+
 export default function Index() {
   return (
     <div>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://flowbite.com/getting-started/remix/"
-            rel="noreferrer"
-            className="text-lg text-blue-600 hover:underline font-bold"
-          >
-            Flowbite + Remix + Tailwind CSS Tutorial
-          </a>
-        </li>
-      </ul>
+      <h1 className="text-2xl text-red-700 font-bold">Welcome to Remix</h1>
+      <Tooltip content="Flowbite is awesome">
+        <Button>Hover to find out</Button>
+      </Tooltip>
     </div>
   );
 }
