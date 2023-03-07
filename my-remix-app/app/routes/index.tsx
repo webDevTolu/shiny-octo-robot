@@ -7,6 +7,7 @@ export default function Index() {
       <Tooltip content="Flowbite is awesome">
         <Button>Hover to find out</Button>
       </Tooltip>
+      hello
     </div>
   );
 }
