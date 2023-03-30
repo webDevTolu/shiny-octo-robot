@@ -34,7 +34,7 @@ const PostDetail = () => {
   return (
     <div>
       <Link to="/"> Back</Link>
-      <h2>{post.title}</h2>
+      <h2 className="text-3xl font-bold text-slate-700 mb-4">{post.title}</h2>
       <p>{post.body}</p>
 
       <div>
