@@ -41,7 +41,7 @@ function Document({ children, title }: DocumentProps) {
         <title>{title ? title : "My Remix Blog"}</title>
         <Links />
       </head>
-      <body className="w-full p-2">
+      <body className="w-full p-2 font-lato">
         <Header />
         {children}
         <ScrollRestoration />
