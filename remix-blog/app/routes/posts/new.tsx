@@ -1,18 +1,18 @@
 import { ActionArgs, redirect } from "@remix-run/node";
 import { Form, Link } from "@remix-run/react";
-
-type Props = {};
+import { db } from "~/utils/db.server";
 
 export async function action({ request }: ActionArgs) {
-  const enteredFormValues = await request.formData();
-  const values = Object.fromEntries(enteredFormValues);
+  const form = await request.formData();
+  const values = Object.fromEntries(form);
 
   // TODO: submit to database
+  const post = await db.post.create({ data: values });
 
-  return redirect("/posts");
+  return redirect(`/posts/${post.id}`);
 }
 
-const NewPost = (props: Props) => {
+const NewPost = () => {
   return (
     <div>
       <h3>Create a new post</h3>

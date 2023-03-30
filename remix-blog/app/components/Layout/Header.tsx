@@ -8,7 +8,6 @@ const Header = () => {
       </Link>
       <ul>
         <li>
-          <Link to="posts">Posts</Link>
           <Link to="posts/new">Create New Post</Link>
         </li>
       </ul>
