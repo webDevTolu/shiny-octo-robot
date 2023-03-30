@@ -16,7 +16,7 @@ const NewPost = () => {
   return (
     <div>
       <h3>Create a new post</h3>
-      <Link to="/posts">Back</Link>
+      <Link to="/">Back</Link>
       <br />
 
       <Form method="post">

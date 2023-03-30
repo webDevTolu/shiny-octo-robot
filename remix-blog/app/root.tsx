@@ -9,7 +9,7 @@ import {
 } from "@remix-run/react";
 import Header from "./components/Layout/Header";
 import { ReactNode } from "react";
-import styles from "~/styles/blog.css";
+import styles from "~/tailwind.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -41,7 +41,7 @@ function Document({ children, title }: DocumentProps) {
         <title>{title ? title : "My Remix Blog"}</title>
         <Links />
       </head>
-      <body>
+      <body className="w-full p-2">
         <Header />
         {children}
         <ScrollRestoration />

@@ -33,7 +33,7 @@ const PostDetail = () => {
   const { post } = useLoaderData<typeof loader>();
   return (
     <div>
-      <Link to="/posts"> Back</Link>
+      <Link to="/"> Back</Link>
       <h2>{post.title}</h2>
       <p>{post.body}</p>
 

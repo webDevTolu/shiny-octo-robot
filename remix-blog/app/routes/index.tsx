@@ -17,7 +17,9 @@ export default function Posts() {
   const { posts } = useLoaderData<typeof loader>();
   return (
     <div>
-      <h1>This is the posts routes that contains all posts</h1>
+      <h1 className="text-3xl font-bold text-blue-900">
+        This is the posts routes that contains all posts
+      </h1>
       <ul>
         {posts.map((post) => (
           <li key={post.id}>
