@@ -20,11 +20,11 @@ export default function Posts() {
       <h1 className="text-3xl font-bold text-blue-900">
         This is the posts routes that contains all posts
       </h1>
-      <ul>
+      <ul className="flex flex-col gap-2 divide-y">
         {posts.map((post) => (
-          <li key={post.id}>
+          <li key={post.id} className="p-2">
             <Link to={`posts/${post.id}`}>
-              <h3>{post.title}</h3>
+              <h3 className="text-lg font-semibold capitalize">{post.title}</h3>
             </Link>
           </li>
         ))}
